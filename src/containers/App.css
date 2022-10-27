@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Litebulb Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Litebulb Bold'), url('litebulb_bold_by_629lyricda0smud1.woff') format('woff');
+    }
+
+h1{
+    font-family:'SEGA LOGO FONT';
+    font-weight:revert;
+    color:#0ccac4;
+}
