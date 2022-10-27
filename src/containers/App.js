@@ -3,6 +3,7 @@ import CardList from "../components/CardList";
 import { players } from "../players";
 import SearchBar from '../components/SearchBar';
 import Scroll from "../components/Scroll";
+import ErrorBoundary from "../components/ErrorBoundary";
 import './App.css'
 
 class App extends Component {
@@ -32,7 +33,9 @@ class App extends Component {
                 <SearchBar searchChange={this.onSearchChange}/>
                 {/*Using props.children we can create components that wrap other components*/}
                 <Scroll>   
-                    <CardList players={filteredPlayers}/> 
+                    <ErrorBoundary>
+                        <CardList players={filteredPlayers}/>
+                    </ErrorBoundary> 
                 </Scroll>
             </div>
         );
